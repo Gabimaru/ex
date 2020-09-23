@@ -1,10 +1,20 @@
-function isPalindrome(el) {
+const isPalindrome = (el) => {
     let rev = el.split('').reverse().join('')
-
-    return el === rev ? true : false
+    console.log(rev)
+    console.log(el)
+    return el === rev
 }
-console.log()
 
 isPalindrome('tenet') // retruns true
-
+console.log(isPalindrome('tenet'))
 isPalindrome('Alyra') // returns false
+console.log(isPalindrome('Alyra'))
+
+// Enoncé
+/*
+Ecrivez une fonction isPalindrome qui prend une string en paramètre.
+Cette fonction retourne true si le paramètre est un palindrome sinon retourne false
+
+isPalindrome('tenet') // retruns true
+isPalindrome('Alyra') // returns false
+*/
